@@ -1,22 +1,23 @@
 ## KPMPower-ToDoList
-A simple To-Do List using React and TypeScript.
+A simple To-Do List built with React and TypeScript.
+Users can add, edit, delete, and check off tasks.
 
-Stardew Valley (font as well as color palette) inspired To-Do List.
+🌿 Inspired by Stardew Valley (color palette & font).
 
-## Installation and Running
-# Clone the repository
+## 🚀 Installation and Running
+# 1️⃣ Clone the Repository
 ```git clone https://github.com/BambooShi/KPMPower-ToDoList.git```
 ```cd <your-project-folder>```
 
-# Install Dependencies
+# 2️⃣ Install Dependencies
 Make sure you have installed Node.js and npm 
 
 ```npm install react-icons --save```
 ```npm install typescript@latest```
 
-# Start the Development Server
+# 3️⃣ Start the Development Server
 To run the app locally:
 ```npm start```
 
-# To run the tests
+# 🧪 To run the tests
 ```npm test```
