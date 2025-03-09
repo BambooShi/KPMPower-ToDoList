@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'StardewValley'; /*https://fontswan.com/stardew-valley-font/ */
+    src: url('../assets/fonts/StardewValley.ttf') format('truetype');
+    font-weight: normal;
+}
+
+.todo-list {
+    width: 70%;
+    font-family: StardewValley;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.todo-list h1 {
+    font-family: 'StardewValley';
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.todo-list form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo-list input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    font-size: 1em;
+    font-family: StardewValley;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.todo-list input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.todo-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fefae0;
+    border-radius: 5px;
+}
+
+.todo-list li span {
+    font-size: 1.2em;
+}
+
+.todo-list li button {
+    padding: 5px 10px;
+    font-size: 1em;
+    background-color: #606c38;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.todo-list li button:hover {
+    background-color: #283618;
+}
+
+.add-button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 10px;
+    background-color: #dda15e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'StardewValley';
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.add-button:hover {
+    background-color: #bc6c25;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.col1 {
+    width: 50%;
+}
+
+.col2 {
+    width: 20%;
+}
+
+.col3 {
+    width: 10%;
+}
+
+.col4 {
+    width: 10%;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Hide the default checkbox */
+input[type="checkbox"] {
+    background-color: brown;
+    cursor: pointer;
+}
+
+/* Style the checkbox after clicking */
+input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+}
