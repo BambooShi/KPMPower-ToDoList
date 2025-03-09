@@ -56,16 +56,16 @@ export default function TodoList() {
             value={newTask}
             onChange={(e) => setNewTask(e.target.value)}
           />
-          <button className="add-button" onClick={handleAddTask}>Add Task</button>
+          <button aria-label="Add Task" className="add-button" onClick={handleAddTask}>Add Task</button>
         </div>
         <ul>
           {tasks.map((task) => (
             <li key={task.id}>
               {editingId === task.id ? (
                 <>
-                  <input className="col1" type="text" value={editedText} onChange={(e) => setEditedText(e.target.value)} />
-                  <button className="col3" onClick={() => handleSaveEdit(task.id, editedText)}><IoIosSave /></button>
-                  <button className="col4" onClick={() => handleCancelEdit()}><MdCancel /></button>
+                  <input aria-label="Edit Textbox" className="col1" type="text" value={editedText} onChange={(e) => setEditedText(e.target.value)} />
+                  <button aria-label="Save Edit" className="col3" onClick={() => handleSaveEdit(task.id, editedText)}><IoIosSave /></button>
+                  <button aria-label="Cancel Edit" className="col4" onClick={() => handleCancelEdit()}><MdCancel /></button>
                   </>
               ) : (
                 <>
@@ -73,11 +73,11 @@ export default function TodoList() {
                   {task.task_description}
                 </span>
                 <div className="checkbox-container col2">
-                  <input className="custom-checkbox" id="checkbox" type="checkbox" checked={task.completed} onChange={() => handleToggleTask(task.id)}/>
+                  <input className="custom-checkbox" aria-label="checkbox" type="checkbox" checked={task.completed} onChange={() => handleToggleTask(task.id)}/>
                   <label htmlFor="custom-checkbox">Completed</label>
                 </div>
-                <button className="col3" onClick={() => handleStartEdit(task.id, task.task_description)}><FaEdit /></button>
-                <button className="col4" onClick={() => handleDeleteTask(task.id)}><FaTrashAlt /></button>
+                <button aria-label="Edit Task" className="col3" onClick={() => handleStartEdit(task.id, task.task_description)}><FaEdit /></button>
+                <button aria-label="Delete Task" className="col4" onClick={() => handleDeleteTask(task.id)}><FaTrashAlt /></button>
                 </>
               )}
             </li>
