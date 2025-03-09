@@ -21,3 +21,5 @@ To run the app locally:
 
 # 🧪 To run the tests
 ```npm test```
+
+P.S. It's my first time running Unit Tests with React, please be kind 🥺🙏.
